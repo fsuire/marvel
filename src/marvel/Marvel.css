@@ -1,0 +1,11 @@
+#marvel {
+  flex-grow: 1;
+}
+
+#marvel .clickable:hover {
+  cursor: pointer;
+}
+
+#marvel .flex-align-left {
+  align-self: flex-start;
+}

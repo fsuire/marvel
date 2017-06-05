@@ -1,0 +1,19 @@
+li.character-list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+li.character-list-item .thumbnail {
+  width: 120px;
+  display: flex;
+  margin-right: 1em;
+}
+
+li.character-list-item .thumbnail img {
+  height: 80px;
+  margin: auto;
+}

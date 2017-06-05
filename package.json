@@ -8,13 +8,17 @@
     "js-base64": "^2.1.9",
     "mimic-fn": "^1.1.0",
     "npm": "^5.0.2",
-    "react": "15.5.4",
-    "react-dom": "15.5.4",
+    "querystringify": "^1.0.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "rx": "^4.1.0",
     "start": "^5.1.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "enzyme": "^2.8.2",
+    "fetch-mock": "^5.11.0",
+    "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.5.4"
   },
   "scripts": {
     "start": "react-scripts start",

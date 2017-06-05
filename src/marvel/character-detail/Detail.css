@@ -1,0 +1,34 @@
+#marvel .character-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#marvel .character-detail > img {
+  height: 200px;
+}
+
+#marvel .character-detail dl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#marvel .character-detail dt {
+  width: 40%;
+  text-align: right;
+  font-weight: bold;
+}
+#marvel .character-detail dd {
+  width: 50%;
+  margin-left: 0;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+#marvel .character-detail dd ol {
+  padding-left: 20px;
+}
+#marvel .character-detail dd li {
+  margin-bottom: .5em;
+}

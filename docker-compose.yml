@@ -9,5 +9,6 @@ dev:
   command: >
     sh -c '
       /docker-scripts/dev.js
+      npm install --save-dev fetch-mock
       npm start
     '
