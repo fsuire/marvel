@@ -1,7 +1,7 @@
 {
   "name": "react-scripts",
   "version": "0.1.0",
-  "private": true,
+  "description": "A docker container that runs a 'boiler-plated' react application made with create-react-app and react-scripts",
   "dependencies": {
     "external-editor": "^2.0.4",
     "is-promise": "^2.1.0",
