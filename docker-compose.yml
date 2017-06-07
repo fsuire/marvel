@@ -6,9 +6,12 @@ dev:
     - .:/application/:rw
   environment:
     - NODE_ENV=development
+    - MARVEL_TS=
+    - MARVEL_API_KEY=
+    - MARVEL_HASH=
   command: >
     sh -c '
       /docker-scripts/dev.js
-      npm install --save-dev fetch-mock
+      /docker-scripts/set-app-config.js
       npm start
     '

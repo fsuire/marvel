@@ -5,6 +5,8 @@ import List from './character-list/List';
 import Detail from './character-detail/Detail';
 import './Marvel.css';
 
+import marvelConfig from '../../conf/marvel.json';
+
 class Marvel extends Component {
 
   state = {
@@ -13,14 +15,11 @@ class Marvel extends Component {
   };
 
   async componentDidMount() {
-    const getParameters = {
-      offset: 100,
-      ts: 'x',
-      apikey: 'xxx',
-      hash: 'xxx'
-    };
-
-    const response = await fetch(`http://gateway.marvel.com/v1/public/characters?${qs.stringify(getParameters)}`);
+    const offset = 100;
+    const queryStringParams = Object.assign({
+      offset: 100
+    }, marvelConfig);
+    const response = await fetch(`http://gateway.marvel.com/v1/public/characters?${qs.stringify(queryStringParams)}`);
     const jsonResponse = await response.json();
     const newState = Object.assign({}, this.state, {characters: jsonResponse.data.results});
     this.setState(newState);

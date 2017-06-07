@@ -3,12 +3,12 @@
 # dependencies
 /node_modules
 
+# environment conf
+/conf
+
 # testing
 /coverage
 /jest_*
-
-# production
-/build
 
 # misc
 .DS_Store

@@ -16,7 +16,7 @@ const Detail = props => {
   const firstThreeComics = character.comics.items.slice(0, 3).map((comic, index) => (
     <li key={index}>{comic.name}</li>
   ));
-  
+
   return (
     <div className="character-detail">
       <div onClick={onClick} className="flex-align-left clickable">Back to the list</div>
